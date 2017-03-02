@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Simple Login Form</title>
+<meta charset="UTF-8" />
+<meta name="Designer" content="PremiumPixels.com">
+<meta name="Author" content="$hekh@r d-Ziner, CSSJUNTION.com">
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/structure.css">
+</head>
+
+<body background="red">
+<form class="box login" action="http://localhost/WP Final/index.html" method="post">
+	<fieldset class="boxBody">
+<?php
+$usn = $_POST['usn'];
+
+$con=mysqli_connect("localhost","root","","exam_application");
+if (mysqli_connect_errno())
+  {
+  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+  }
+$result = mysqli_query($con,"SELECT * FROM register WHERE usn ='$usn' ");
+echo "<table border='1'>
+<tr>
+<th>USN</th>
+<th>SEMESTER</th>
+<th>SUBJECT-1</th>
+<th>SUBJECT-2</th>
+<th>SUBJECT-3</th>
+<th>SUBJECT-4</th>
+<th>SUBJECT-5</th>
+<th>SUBJECT-6</th>
+<th>SUBJECT-7</th>
+<th>SUBJECT-8</th>
+</tr>";
+while($row = mysqli_fetch_array($result))
+  {
+  echo "<tr>";
+  echo "<td>" . $row['usn'] . "</td>";
+  echo "<td>" . $row['sem'] . "</td>";
+  echo "<td>" . $row['sub1'] . "</td>";
+  echo "<td>" . $row['sub2'] . "</td>";
+  echo "<td>" . $row['sub3'] . "</td>";
+   echo "<td>" . $row['sub4'] . "</td>";
+    echo "<td>" . $row['sub5'] . "</td>";
+	 echo "<td>" . $row['sub6'] . "</td>";
+   echo "<td>" . $row['sub7'] . "</td>";
+  echo "<td>" . $row['sub8'] . "</td>";
+  echo "</tr>";
+  }
+echo "</table>";
+mysqli_close($con);
+?>
+	  <input type="submit" class="btnLogin" value="CHECK" tabindex="4">
+	</footer>
+</form>
+<footer id="main">
+  <!--<a href="http://wwww.cssjunction.com">Simple Login Form (HTML5/CSS3 Coded) by CSS Junction</a> | <a href="http://www.premiumpixels.com">PSD by Premium Pixels</a>
+--></footer>
+</body>
+</html>

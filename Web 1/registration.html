@@ -1,0 +1,87 @@
+<!Doctype html>
+<html>
+<head><title>Course Registration</title>
+</head>
+<script type="text/javascript" src="visible.js">
+</script>
+<body onload="alert('Welcome for Course Registration.Get yourself enrolled in the COA office for Admit Card');">
+<div class="header" style="border-style:dashed;height:80px;width:100%;background-image:url(C:\xampp\htdocs\WP Final\web 1\images\banner2.jpg);background-repeat:none;background-color:#4d79ff;position:relative;">
+<h1 style="float:left;font-size:13pt;position:relative;left:20px;color:white;">BMSCE COA's Admin Database</h1>
+<img src="C:\xampp\htdocs\WP Final\web 1\images\logout.png" style="position:relative;left:75%;height:20px;width:20px;top:15px;" />
+<a style="float:left;font-size:12pt;position:relative;left:80%;top:15px;color:white;" href="http://localhost/WP Final/index.html">Logout</a>
+<h1 style="position:relative;left:40%;font-size:20;color:white;">Welcome 1BM15CS014</h1>
+</div>
+<div style="height:70px;border-style:dashed;background-color:#4d79ff;width:100%;margin:.5px;">
+<a href="#sem1" style="float:left;position:relative;left:15%;top:10px;border-style:dotted;padding:10px;background-color:#1aff1a">Semester 1</a>
+<a href="#sem2" style="float:left;position:relative;left:28%;top:10px;border-style:dotted;padding:10px;background-color:#1aff1a">Semester 2</a>
+<a href="#sem3" style="float:left;position:relative;left:45%;top:10px;border-style:dotted;padding:10px;background-color:#1aff1a">Semester 3</a>
+<a href="#sem4" style="float:left;position:relative;left:60%;top:10px;border-style:dotted;padding:10px;background-color:#1aff1a">Semester 4</a>
+</div>
+<div id="sem1" style="width:100%;height:430px;margin:0.5px;border-style:dashed;background-color:#4d79ff;">
+<form style="position:relative;left:25%;top:10px;background-color: #ffff99;width:50%;visibility:visible;" action="third.php" method="post" id="form1" onsubmit="f1();">
+<label style="font-size:24pt;margin:5px; position:relative;left:20%;margin:10px;top:20px">Confirm USN</label>
+<input type="text" name="usn" width="25"style="position:relative;left:20%;width:250px;height:25px;top:20px;" id="usn1" /><br /><br /><br />
+<label style="font-size:24pt;margin:5px;">Subjects</label>
+<ul style="list-style-type:none;">
+<li style="font-size:20pt;"><input type="checkbox" name="sub1" value="Engineering Mathematics-I" id="1" />Mathematics-I</li>
+<li style="font-size:20pt;"><input type="checkbox" name="sub2" value="Engineering Chemistry" id="2" />Engineering Chemistry</li>
+<li style="font-size:20pt;"><input type="checkbox" name="sub3" value="Basic Electrical Engineering" id="3" />Basic Electrical Engineering</li>
+<li style="font-size:20pt;"><input type="checkbox" name="sub4" value="Elements of Engineering Drawing" id="4" />Elements of Engineering Drawing</li>
+<li style="font-size:20pt;"><input type="checkbox" name="sub5" value="Engineering Mechanics" id="5"/>Engineering Mechanics</li>
+<li style="font-size:20pt;"><input type="checkbox" name="sub6" value="Co Lab-II" id="6"/>Co Lab-II</li>
+<li style="font-size:20pt;"><input type="checkbox" name="sub7" value="Environmental Studies" id="7"/>Environmental Studies</li>
+<li style="font-size:20pt;"><input type="checkbox" name="sub8" value="Constitution of India and Professional Ethics" id="8"/>Constitution of India and Professional Ethics</li>
+<li style="font-size:20pt;float:left;position:relative;left:40%;"><input type="submit" value="Click Me" /><li>
+</ul>
+</form>
+</div>
+<div id="sem2" style="width:100%;height:430px;margin:0.5px;border-style:dashed;background-color:#4d79ff">
+<form style="position:relative;left:25%;top:10px;background-color: #ffff99;width:50%;visibility:visible;" action="fourth.php" method="post" id="form2">
+<label style="font-size:24pt;margin:5px; position:relative;left:20%;margin:10px;top:20px">Confirm USN</label>
+<input type="text" name="usn" width="25"style="position:relative;left:20%;width:250px;height:25px;top:20px;" /><br /><br /><br />
+<label style="font-size:24pt;margin:5px;">Subjects</label>
+<ul style="list-style-type:none;">
+<li style="font-size:20pt;"><input type="checkbox" name="sub1" value="Engineering Mathematics-II" />Mathematics-II</li>
+<li style="font-size:20pt;"><input type="checkbox" name="sub2" value="Engineering Physics" />Engineering Physics</li>
+<li style="font-size:20pt;"><input type="checkbox" name="sub3" value="Elements of Electronics Engineering" />Elements of Electronics Engineering</li>
+<li style="font-size:20pt;"><input type="checkbox" name="sub4" value="Elements of Mechanical Engineering" />Elements of Mechanical Engineering</li>
+<li style="font-size:20pt;"><input type="checkbox" name="sub5" value="C Programming" />C Programming</li>
+<li style="font-size:20pt;"><input type="checkbox" name="sub6" value="Co Lab-I" />Co Lab-I</li>
+<li style="font-size:20pt;"><input type="checkbox" name="sub7" value="Biology for Engineers" />Biology for Engineers</li>
+<li style="font-size:20pt;"><input type="checkbox" name="sub8" value="Personality Development and Communication" />Personality Development and Communication</li>
+<li style="font-size:20pt;float:left;position:relative;left:40%;"><input type="submit" value="Click Me" /><li>
+</ul>
+</form>
+</div>
+<div id="sem3" style="width:100%;height:430px;margin:0.5px;border-style:dashed;background-color:#4d79ff">
+<form style="position:relative;left:25%;top:10px;background-color: #ffff99;width:50%;visibility:visible;" action="fifth.php" method="post" id="form3">
+<label style="font-size:24pt;margin:5px; position:relative;left:20%;margin:10px;top:20px">Confirm USN</label>
+<input type="text" name="usn" width="25"style="position:relative;left:20%;width:250px;height:25px;top:20px;" /><br /><br /><br />
+<label style="font-size:24pt;margin:5px;">Subjects</label>
+<ul style="list-style-type:none;">
+<li style="font-size:20pt;"><input type="checkbox" name="sub1" value="Discrete Mathematics" />Discrete Mathematics</li>
+<li style="font-size:20pt;"><input type="checkbox" name="sub2" value="Data Structurers" />Data Structures</li>
+<li style="font-size:20pt;"><input type="checkbox" name="sub3" value="Programming with C++" />Programming with C++</li>
+<li style="font-size:20pt;"><input type="checkbox" name="sub4" value="Web Programming" />Web Programming</li>
+<li style="font-size:20pt;"><input type="checkbox" name="sub5" value="Computer Organization and Architecture" />Computer Organization and Architecture</li>
+<li style="font-size:20pt;float:left;position:relative;left:40%;"><input type="submit" value="Click Me" /><li>
+</ul>
+</form>
+</div>
+<div id="sem4" style="width:100%;height:430px;margin:0.5px;border-style:dashed;background-color:#4d79ff">
+<form style="position:relative;left:25%;top:10px;background-color: #ffff99;width:50%;visibility:vissible;" action="sixth.php" method="post" id="form4">
+<label style="font-size:24pt;margin:5px; position:relative;left:20%;margin:10px;top:20px">Confirm USN</label>
+<input type="text" name="usn" width="25"style="position:relative;left:20%;width:250px;height:25px;top:20px;" /><br /><br /><br />
+<label style="font-size:24pt;margin:5px;">Subjects</label>
+<ul style="list-style-type:none;">
+<li style="font-size:20pt;"><input type="checkbox" name="sub1" value="Linear Algebra" />Linear Algebra</li>
+<li style="font-size:20pt;"><input type="checkbox" name="sub2" value="OOPS with Java" />OOPS with Java</li>
+<li style="font-size:20pt;"><input type="checkbox" name="sub3" value="Database Management Systems" />Database Management Systems</li>
+<li style="font-size:20pt;"><input type="checkbox" name="sub4" value="Operating Systems" />Operating Systems</li>
+<li style="font-size:20pt;"><input type="checkbox" name="sub5" value="Data Communication" />Data Communication</li>
+<li style="font-size:20pt;float:left;position:relative;left:40%;"><input type="submit" value="Click Me" /><li>
+</ul>
+</form>
+</div>
+</body>
+</html>

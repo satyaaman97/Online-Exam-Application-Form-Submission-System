@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Simple Login Form</title>
+<meta charset="UTF-8" />
+<meta name="Designer" content="PremiumPixels.com">
+<meta name="Author" content="$hekh@r d-Ziner, CSSJUNTION.com">
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/structure.css">
+<script type="text/javascript">
+//<![CDATA[
+function validator()
+{
+var dom=document.getElementById("usn1")
+var pos=dom.value.search(/^1BM\d{2}[A-Z]{2}\d{3}$/i);
+if(pos==0)
+{
+return true;
+}
+else{
+alert("Type the correct USN");
+dom.focus();
+dom.init();
+return false;
+}
+return false;
+}
+//]]>
+</script>
+</head>
+
+<body background="red">
+<form class="box login" action="http://localhost/WP Final/web 1/seventh.php" method="post" onsubmit="validator();">
+	<fieldset class="boxBody">
+	  <label>Usn</label>
+	  <input type="text" tabindex="1" required name="usn" id="usn1">
+	 <!-- <label><a href="google.co.in" class="rLink" tabindex="5">Forget your password?</a>Password</label>
+	  <input type="password" tabindex="2" required id="password">-->
+	</fieldset>
+	<footer>
+	  <!--<label><input type="checkbox" tabindex="3">Keep me logged in</label>-->
+	  <input type="submit" class="btnLogin" value="CHECK" tabindex="4">
+	</footer>
+</form>
+<footer id="main">
+  <!--<a href="http://wwww.cssjunction.com">Simple Login Form (HTML5/CSS3 Coded) by CSS Junction</a> | <a href="http://www.premiumpixels.com">PSD by Premium Pixels</a>
+--></footer>
+</body>
+</html>
